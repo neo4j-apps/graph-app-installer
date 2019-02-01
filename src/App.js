@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Header, Card } from 'semantic-ui-react';
+import GraphAppCard from './GraphAppCard.js';
+import 'semantic-ui-css/semantic.min.css';
 import './App.css';
+import graphapps from './graphapps.json';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Header as='h1'>Graph App Installer</Header>
+          <Card.Group>
+            {graphapps.map((app, i) => {
+              return <GraphAppCard key={i} app={app} />;
+            })}
+          </Card.Group>
       </div>
     );
   }

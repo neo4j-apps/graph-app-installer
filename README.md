@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Graph App Installer
 
-## Available Scripts
+This is used to navigate and install apps on [Neo4j Desktop](https://neo4j.com/developer/neo4j-desktop/).
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+#### Initial setup:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Install [nvm](https://github.com/creationix/nvm#installation)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Activate the correct node.js version using nvm.  You may receive a message instructing you to install the
+correct node.js version if you have not done so before.  To ensure you are always using the correct node.js version
+you need to run this command every time you work on this project.
 
-### `npm test`
+```bash
+nvm use
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install npm and yarn:
 
-### `npm run build`
+1. [installing npm](https://www.npmjs.com/get-npm)
+2. [installing yarn](https://yarnpkg.com/en/docs/install)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```bash
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Development mode:
 
-### `npm run eject`
+```bash
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Production build:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Testing:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Launches the test runner in the interactive watch mode:
 
-## Learn More
+```bash
+yarn test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Loading into Neo4j Desktop
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Go to your Neo4j Desktop’s settings (bottom left gear icon).
+* Enable development mode.
+* Set Development App Entry Point to the http address where this server is running, ex: `http://localhost:3000`.
+* Set Development App Root Path to this cloned repository, where `package.json` is, ex: `/home/user/graph-app-installer`.
+* Click on Development App
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
