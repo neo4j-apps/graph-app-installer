@@ -16,7 +16,7 @@
   display: inline-block !important;
 }
 
-.graphAppCard__content,
+.graphAppCard__header,
 .graphAppCard__footer {
   flex-grow: 0 !important;
 }
