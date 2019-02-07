@@ -40,6 +40,9 @@ class GraphAppCard extends Component {
             <List.Icon name='user' />
             <List.Content>{app.author}</List.Content>
           </List.Item>}
+          {app.latestVersion && <List.Item>
+            <List.Content>Latest Version: {app.latestVersion}</List.Content>
+          </List.Item>}
           {app.official && <List.Item>
             <List.Icon name='info circle' />
             <List.Content>Provided By Neo4j</List.Content>
