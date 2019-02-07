@@ -45,6 +45,14 @@
     "installUrl": "https://neo.jfrog.io/neo/api/npm/npm/neo4j-db-analyzer",
     "homepage": "https://github.com/neo4j-apps/awesome-graph-apps",
     "latestVersion": "0.0.8"
+  },
+  {
+    "title": "Halin",
+    "description": "Halin helps you monitor and improve your Neo4j graph.",
+    "installUrl": "https://neo.jfrog.io/neo/api/npm/npm/halin",
+    "homepage": "https://github.com/moxious/halin",
+    "latestVersion": "0.7.3",
+    "image": "https://halin.graphapp.io/img/halin-icon.png"
   }
 ]
 
