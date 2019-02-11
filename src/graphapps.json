@@ -21,7 +21,8 @@
     "title": "Neo4j ETL",
     "description": "Import your RDBMS data directly into your Neo4j Graph.",
     "installUrl": "https://neo.jfrog.io/neo/api/npm/npm/neo4j-etl-ui",
-    "homepage": "https://github.com/neo4j-contrib/neo4j-etl",
+    "homepage": "https://neo4j.com/developer/neo4j-etl/",
+    "repository": "https://github.com/neo4j-contrib/neo4j-etl",
     "latestVersion": "1.3.3",
     "official": true
   },
@@ -36,7 +37,7 @@
     "title": "Query Log Analyzer",
     "description": "Upload and analyze your neo4j query log file.",
     "installUrl": "https://neo.jfrog.io/neo/api/npm/npm/query-log-analyzer",
-    "homepage": "https://github.com/neo4j-apps/awesome-graph-apps",
+    "homepage": "https://medium.com/neo4j/meet-the-query-log-analyzer-30b3eb4b1d6",
     "latestVersion": "0.0.5"
   },
   {
@@ -50,7 +51,8 @@
     "title": "Halin",
     "description": "Halin helps you monitor and improve your Neo4j graph.",
     "installUrl": "https://neo.jfrog.io/neo/api/npm/npm/halin",
-    "homepage": "https://github.com/moxious/halin",
+    "homepage": "https://medium.com/neo4j/monitoring-neo4j-with-halin-4c11429b46ff",
+    "repository": "https://github.com/moxious/halin",
     "latestVersion": "0.7.3",
     "image": "https://halin.graphapp.io/img/halin-icon.png"
   }
